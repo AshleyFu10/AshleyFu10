@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>注册页面</title>   
+    </head>
+
+
+<style type="text/css">
+h2 {
+    font-size: 40px;
+    color:#DD868C;
+    text-shadow: 1px 1px 1px #ffffff, 2px 2px 2px rgb(255, 255, 255); 
+    }
+    
+    .box {
+    border: 1px solid #e4c4c4;
+    height: 440px;
+    width: 800px;
+    float: left;
+    margin: 200px #e4c4c4;
+    
+    margin-left: 23%;
+    border-top-left-radius: 25px; 
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px; 
+    border-bottom-right-radius: 25px;
+    background-color:  #EABEC3;
+    
+    }
+    
+    
+    .input_box{
+    margin-left: 23%;
+    height: 30px;
+    width: 600px;
+    text-shadow: 1.5px 1.5px 1.5px #ffffff, 0px 0px 2px rgb(255, 255, 255); 
+    font-weight: 700;
+    color: #DD868C;
+    }
+    input {
+    align-self: center;
+    height: 31px;
+    width: 430px;
+    text-align:center;
+    color:#DD868C;
+    
+    border-top-left-radius: 25px; 
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px; 
+    border-bottom-right-radius: 25px;
+    }
+    
+    button{
+    border-top-left-radius: 25px; 
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px; 
+    border-bottom-right-radius: 25px;
+    font-size: 20px;
+    color:#ffffff;
+    
+    
+    width: 150px;
+    height: 50px;
+    align-self: center;
+    margin-bottom: auto;
+    background:  #DD868C;
+    margin-left: 41%;
+    margin-top: 5%;
+    text-align:center;
+    }
+
+
+    .button2{
+    border-top-left-radius: 25px; 
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px; 
+    border-bottom-right-radius: 25px;
+    font-size: 20px;
+    color:#ffffff;
+
+    width: 100px;
+    height: 50px;
+    margin-bottom: auto;
+    background:  #DD868C;
+    margin-left: 41%;
+    margin-top: 5%;
+    text-align:center;
+
+    }
+
+    body{
+     background-color:#EDEEF3
+     }
+</style>
+
+
+    <body> 
+        <div class="logo">
+        <p style = "text-align: center;">
+        <img src="logo.png"  width="450" height="250" ></p>
+        </div>
+
+    <div class="box">
+        <div id="tittle">
+        <h2 align="center"> Registrtation</h2>
+     </div>
+
+     <form id ="form0" name="form0" AUTOCOMPLETE ="OFF">
+        <p class="input_box">
+            Email Address:
+            <br>
+             <input id="Email_Address" type="email" placeholder="Please enter your Email Address here">
+            <br>
+        </p >
+
+        <p class="input_box">
+            <br>
+            Verification Code: 
+             <br>
+             <input id="Verification_Code" type="text" placeholder="Please enter your Verification Code here">
+             <button2 size="small" id ="btnGetVcode" style ="cursor:pointer">Send</button2>            
+        </p >
+        <div id="error_box"><br></div>
+       
+        <p class="input_box">
+            Password:
+            <br>
+             <input id="Password" type="password" placeholder="Please enter your Password here">
+             <br>
+        </p >
+        <div id="error_box"></div>
+
+        <p class="input_box">
+            <br>
+            Confirm Password:
+            <br>
+            <input id="Confirm_Password" type="password" placeholder="Please confirm your Password again">
+             <br>
+        </p >
+        <div id="error_box"><br></div>
+
+ 
+        <div class="button">
+            <br>
+            <button onclick="TurnToLogin()" type ="button" id ="btnVerify" style = "cursor:piinter">REGISTER</button>
+            <br>
+   
+    </form>
+    </div>
